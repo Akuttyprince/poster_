@@ -1,0 +1,63 @@
+body{
+    border: 4px solid red;
+}
+.flyer {
+	display: grid;
+	grid-gap: 0;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-areas:
+		"crest 		intro 		intro"
+		"chef 		intro 		intro"
+		"chef 		carpentry 	calendar"
+		"tuition 	tuition 	table";
+	max-width: 700px;
+	padding: 1px;
+	background-color: blue;
+	border: 4px solid red;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 300;
+	margin-inline: auto;
+	margin-top: 2em;
+}
+.crest {
+	grid-area: crest;
+	background-image: url();
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: #620808;
+}
+.intro {
+	grid-area: intro;
+	background-color: blue;
+	color: #050202;
+}
+.chef {
+	grid-area: chef;
+	background-image: url();
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.carpentry {
+	grid-area: carpentry;
+	background-image: url();
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.calendar {
+	grid-area: calendar;
+	text-align: center;
+}
+.tuition {
+	grid-area: tuition;
+	text-align: center;
+}
+.table {
+	grid-area: table;
+	background-image: url();
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
